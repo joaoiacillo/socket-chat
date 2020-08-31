@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Socket Chat</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h3 class="app-title">Socket Chat</h3>
+
+        <div class="app-wrapper">
+            <div class="left-box" id="channels-wrapper">
+                <h4 class="box-title">Channels</h4>
+                <div class="box-separator"></div>
+
+                <ul id="channel-list">
+                    <li class="channel-block active">general</li>
+                    <li class="channel-block">games</li>
+                    <li class="channel-block">media</li>
+                    <li class="channel-block">music</li>
+                    <li class="channel-block">pt-br</li>
+                </ul>
+            </div>
+            <div class="right-box" id="messages-wrapper">
+                <form class="box-form" id="message-form">
+                    <input
+                        type="text"
+                        class="form-input"
+                        name="message-content"
+                        placeholder="Message"
+                        autocomplete="off"
+                    />
+                    <input type="submit" class="form-button" value="Send" />
+                </form>
+
+                <ul id="message-list"></ul>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
