@@ -1,4 +1,4 @@
-# socket-chat
+# socket-chat [ DISCONTINUED ]
 A multi-channel web socket chat application.
 
 ## Usage
